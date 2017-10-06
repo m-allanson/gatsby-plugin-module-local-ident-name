@@ -1,0 +1,18 @@
+{
+  "name": "gatsby-plugin-module-local-ident-name",
+  "version": "0.0.1",
+  "description": "Adds support for modifying CSS Modules classnames in development mode",
+  "author": "Mike Allanson (https://github.com/m-allanson/)",
+  "contributors": [],
+  "dependencies": {
+    "gatsby-1-config-css-modules": "^1.0.5"
+  },
+  "keywords": [
+    "CSS Modules",
+    "gatsby",
+    "webpack"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {}
+}
