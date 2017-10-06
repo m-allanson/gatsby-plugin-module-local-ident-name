@@ -5,6 +5,10 @@
   "author": "Mike Allanson (https://github.com/m-allanson/)",
   "contributors": [],
   "homepage": "https://github.com/m-allanson/gatsby-plugin-module-local-ident-name/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-allanson/gatsby-plugin-module-local-ident-name.git"
+  },
   "dependencies": {
     "gatsby-1-config-css-modules": "^1.0.5"
   },
