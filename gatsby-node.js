@@ -34,6 +34,7 @@ const replaceLoaderIdentName = (loader, newIdent) => {
  * Modify the cssModules loader with a new localIdentName
  */
 module.exports.modifyWebpackConfig = ({ config, stage }, pluginOptions) => {
+  const includeSASS = pluginOptions.includeSASS || false;
   if (stage !== "develop") return config;
 
   config.loader(`cssModules`, current => {
@@ -50,5 +51,20 @@ module.exports.modifyWebpackConfig = ({ config, stage }, pluginOptions) => {
     return current;
   });
 
+  if (includeSASS) {
+    config.loader(`sassModules`, current => {
+      const index = current.loaders.findIndex(loader =>
+        loader.startsWith("css?")
+      );
+
+      const newLoader = replaceLoaderIdentName(
+        current.loaders[index],
+        pluginOptions.localIdentName
+      );
+
+      current.loaders[index] = newLoader;
+      return current;
+    });
+  }
   return config;
 };

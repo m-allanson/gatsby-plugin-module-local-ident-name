@@ -9,7 +9,8 @@ Adds support for specifying CSS Modules classnames in [Gatsby](https://www.gatsb
 # How to use
 
 1. Include the plugin in your `gatsby-config.js` file.
-1. Specify a new `localIdentName` for your class names
+2. Specify a new `localIdentName` for your class names
+3. Want to include SASS files? Set `includeSASS` to true
 
 ```javascript
 // in gatsby-config.js
@@ -17,7 +18,8 @@ plugins: [
   {
     resolve: `gatsby-plugin-module-local-ident-name`,
     options: {
-      localIdentName: "[folder]-[local]-[hash:base64:5]"
+      localIdentName: "[folder]-[local]-[hash:base64:5]",
+      includeSASS: true //default false
     }
   }
 ]
