@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-module-local-ident-name",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Adds support for modifying CSS Modules classnames in development mode",
   "author": "Mike Allanson (https://github.com/m-allanson/)",
   "contributors": [],
