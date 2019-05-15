@@ -15,7 +15,8 @@
   "keywords": [
     "CSS Modules",
     "gatsby",
-    "webpack"
+    "webpack",
+    "gatsby-plugin"
   ],
   "engines": {
     "node": ">=8.0.0"
