@@ -1,6 +1,8 @@
 # gatsby-plugin-module-local-ident-name
 
-Adds support for specifying CSS Modules classnames in [Gatsby](https://www.gatsbyjs.org/)'s development mode. No changes are made to Gatsby's production builds.
+For Gatsby v1 only. Check issues for how to implement this behaviour in Gatsby v2.
+
+Adds support for specifying CSS Modules classnames in [Gatsby](https://www.gatsbyjs.org/)'s development mode. No changes are made to Gatsby's production builds. 
 
 # Install
 
